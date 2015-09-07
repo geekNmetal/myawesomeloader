@@ -1,0 +1,126 @@
+/* 
+    Created on : 31 août 2015, 19:34:54
+    Author     : Sébastien Leroy
+    Email : sebastien@2dbnet.fr
+*/
+
+@mainColor : #a21954;
+.transition-all{
+    transition: all 0.5s ease;
+}
+.myAwsomeLoader {
+    font-family: 'Arial', 'sans-serif';
+    position : fixed;
+    z-index: 9999;
+    background : #fff;
+    top : 0px;
+    left : 0px;
+    height : 100%;
+    width : 100%;
+    cursor : wait;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    p{
+        margin-bottom: 0;
+    }
+    .loader-img{
+        position: relative;
+        width: 200px;
+        margin: 0 auto;
+        .mask{
+            position: absolute;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            background: #fff;
+        }
+    }
+    .loading{
+        text-align: center;
+        margin-top: 1em;
+        .dot{
+            display: inline-block;
+/*            width: 20px;
+            height: 20px;*/
+            background: none;
+            border: 1px solid;
+            margin: 0 5px;
+            .transition-all;
+            &.blank{
+                background: none !important;
+            }
+            &.filled{
+                .transition-all;
+            }
+        }
+        .chargement{
+            text-align: center;
+            margin: 15px 0;
+        }
+    }
+    #logo{
+        max-width: 100%;
+        height: auto;
+        .transition-all;
+    }
+    .round{
+        border-radius: 10px;
+    }
+    .rotateX{
+        transform: rotateX(360deg);
+        .transition-all;
+    }
+    .rotateY{
+        transform: rotateY(360deg);
+        .transition-all;
+    }
+    .rotateZ{
+        transform: rotateZ(360deg);
+        .transition-all;
+    }
+    @keyframes bounce { 
+        0% {
+            top: 0;
+        }
+        25%{
+            top: 5px;
+        }
+        50%{
+            top: -5px;
+        }
+        75%{
+            top: 5px;
+        }
+        100%{
+            top: 0;
+        }
+    }
+    .bounce{
+        position: relative;
+        animation: bounce 1s ease;
+    }
+    #barWrapper{
+        height: 5px;
+        border: 1px solid;
+        margin: 0 auto;
+    }
+    #bar{
+        height: 100%;
+    }
+    #bar, #barWrapper{
+        display: none;
+    }
+}

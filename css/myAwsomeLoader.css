@@ -1,0 +1,126 @@
+/* 
+    Created on : 31 août 2015, 19:34:54
+    Author     : Sébastien Leroy
+    Email : sebastien@2dbnet.fr
+*/
+.transition-all {
+  transition: all 0.5s ease;
+}
+.myAwsomeLoader {
+  font-family: 'Arial', 'sans-serif';
+  position: fixed;
+  z-index: 9999;
+  background: #fff;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  cursor: wait;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+.myAwsomeLoader p {
+  margin-bottom: 0;
+}
+.myAwsomeLoader .loader-img {
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+}
+.myAwsomeLoader .loader-img .mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+.myAwsomeLoader .loading {
+  text-align: center;
+  margin-top: 1em;
+}
+.myAwsomeLoader .loading .dot {
+  display: inline-block;
+  /*            width: 20px;
+            height: 20px;*/
+  background: none;
+  border: 1px solid;
+  margin: 0 5px;
+  transition: all 0.5s ease;
+}
+.myAwsomeLoader .loading .dot.blank {
+  background: none !important;
+}
+.myAwsomeLoader .loading .dot.filled {
+  transition: all 0.5s ease;
+}
+.myAwsomeLoader .loading .chargement {
+  text-align: center;
+  margin: 15px 0;
+}
+.myAwsomeLoader #logo {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.5s ease;
+}
+.myAwsomeLoader .round {
+  border-radius: 10px;
+}
+.myAwsomeLoader .rotateX {
+  transform: rotateX(360deg);
+  transition: all 0.5s ease;
+}
+.myAwsomeLoader .rotateY {
+  transform: rotateY(360deg);
+  transition: all 0.5s ease;
+}
+.myAwsomeLoader .rotateZ {
+  transform: rotateZ(360deg);
+  transition: all 0.5s ease;
+}
+@keyframes bounce {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 5px;
+  }
+  50% {
+    top: -5px;
+  }
+  75% {
+    top: 5px;
+  }
+  100% {
+    top: 0;
+  }
+}
+.myAwsomeLoader .bounce {
+  position: relative;
+  animation: bounce 1s ease;
+}
+.myAwsomeLoader #barWrapper {
+  height: 5px;
+  border: 1px solid;
+  margin: 0 auto;
+}
+.myAwsomeLoader #bar {
+  height: 100%;
+}
+.myAwsomeLoader #bar,
+.myAwsomeLoader #barWrapper {
+  display: none;
+}
+/*# sourceMappingURL=myAwsomeLoader.css.map */
