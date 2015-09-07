@@ -6,7 +6,7 @@
 .transition-all {
   transition: all 0.5s ease;
 }
-.myAwsomeLoader {
+.myAwesomeLoader {
   font-family: 'Arial', 'sans-serif';
   position: fixed;
   z-index: 9999;
@@ -31,15 +31,15 @@
   justify-content: center;
   text-align: center;
 }
-.myAwsomeLoader p {
+.myAwesomeLoader p {
   margin-bottom: 0;
 }
-.myAwsomeLoader .loader-img {
+.myAwesomeLoader .loader-img {
   position: relative;
   width: 200px;
   margin: 0 auto;
 }
-.myAwsomeLoader .loader-img .mask {
+.myAwesomeLoader .loader-img .mask {
   position: absolute;
   top: 0;
   right: 0;
@@ -47,11 +47,11 @@
   width: 100%;
   background: #fff;
 }
-.myAwsomeLoader .loading {
+.myAwesomeLoader .loading {
   text-align: center;
   margin-top: 1em;
 }
-.myAwsomeLoader .loading .dot {
+.myAwesomeLoader .loading .dot {
   display: inline-block;
   /*            width: 20px;
             height: 20px;*/
@@ -60,33 +60,33 @@
   margin: 0 5px;
   transition: all 0.5s ease;
 }
-.myAwsomeLoader .loading .dot.blank {
+.myAwesomeLoader .loading .dot.blank {
   background: none !important;
 }
-.myAwsomeLoader .loading .dot.filled {
+.myAwesomeLoader .loading .dot.filled {
   transition: all 0.5s ease;
 }
-.myAwsomeLoader .loading .chargement {
+.myAwesomeLoader .loading .chargement {
   text-align: center;
   margin: 15px 0;
 }
-.myAwsomeLoader #logo {
+.myAwesomeLoader #logo {
   max-width: 100%;
   height: auto;
   transition: all 0.5s ease;
 }
-.myAwsomeLoader .round {
+.myAwesomeLoader .round {
   border-radius: 10px;
 }
-.myAwsomeLoader .rotateX {
+.myAwesomeLoader .rotateX {
   transform: rotateX(360deg);
   transition: all 0.5s ease;
 }
-.myAwsomeLoader .rotateY {
+.myAwesomeLoader .rotateY {
   transform: rotateY(360deg);
   transition: all 0.5s ease;
 }
-.myAwsomeLoader .rotateZ {
+.myAwesomeLoader .rotateZ {
   transform: rotateZ(360deg);
   transition: all 0.5s ease;
 }
@@ -107,20 +107,20 @@
     top: 0;
   }
 }
-.myAwsomeLoader .bounce {
+.myAwesomeLoader .bounce {
   position: relative;
   animation: bounce 1s ease;
 }
-.myAwsomeLoader #barWrapper {
+.myAwesomeLoader #barWrapper {
   height: 5px;
   border: 1px solid;
   margin: 0 auto;
 }
-.myAwsomeLoader #bar {
+.myAwesomeLoader #bar {
   height: 100%;
 }
-.myAwsomeLoader #bar,
-.myAwsomeLoader #barWrapper {
+.myAwesomeLoader #bar,
+.myAwesomeLoader #barWrapper {
   display: none;
 }
-/*# sourceMappingURL=myAwsomeLoader.css.map */
+/*# sourceMappingURL=myAwesomeLoader.css.map */

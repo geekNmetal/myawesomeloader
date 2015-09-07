@@ -1,13 +1,13 @@
-# myAwsomeLoader
+# myAwesomeLoader
 ---
 
-[1]: <https://github.com/geekNmetal/myawsomeloader>
+[1]: <https://github.com/geekNmetal/myawesomeloader>
 
 _Un preloader jQuery sexy hautement personnalisable._
 
 ## Description
 
-myAwsomeLoader est un plugin jQuery permettant d'ajouter facilement un preloader personnalisé sur vos pages web.
+myAwesomeLoader est un plugin jQuery permettant d'ajouter facilement un preloader personnalisé sur vos pages web.
 
 ### Version
 1.0.0
@@ -17,12 +17,12 @@ myAwsomeLoader est un plugin jQuery permettant d'ajouter facilement un preloader
 Insérez juste après la balise `<head>` afin de charger le plugin avant tout le reste
 
 	<head>
-	    <link href="css/myAwsomeLoader.css" rel="stylesheet" type="text/css" />
+	    <link href="css/myAwesomeLoader.css" rel="stylesheet" type="text/css" />
 	    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-	    <script src="js/myAwsomeLoader.js"></script>
+	    <script src="js/myAwesomeLoader.js"></script>
 	    <script>
 	    	$(function () {
-	        	$('html').myAwsomeLoader();
+	        	$('html').myAwesomeLoader();
 			});
 		</script>
 
@@ -48,7 +48,7 @@ Insérez juste après la balise `<head>` afin de charger le plugin avant tout le
 ## Exemple
 
 	$(function () {
-		$('html').myAwsomeLoader({
+		$('html').myAwesomeLoader({
 			type: "",
 			loaderColor: "c802ff",
 			logoPath: "/images/sexy.png",

@@ -1,16 +1,16 @@
 /* 
- *    myAwsomeLoader
+ *    myAwesomeLoader
  *    Un preloader sexy hautement configurable
  *    
  *    Created on    : 31 août 2015, 19:34:54
  *    Author        : Sébastien Leroy
  *    Email         : sebastien@2dbnet.fr
- *    Version       : 1.0
- *    Licence       : MIT
+ *    Version       : 1.0.0
+ *    License       : MIT
  */
 
 (function ($) {
-    $.fn.myAwsomeLoader = function (options) {
+    $.fn.myAwesomeLoader = function (options) {
 
         var defauts =
                 {
@@ -33,14 +33,14 @@
         params = $.extend(defauts, options);
 
         return this.each(function () {
-            $(this).prepend('<div class = "myAwsomeLoader">'
+            $(this).prepend('<div class = "myAwesomeLoader">'
                     + '<p class = "loadingMessage">' + params.loadingMessage + '</p>'
                     + '<div id="barWrapper"><div id="bar"></div></div>'
                     + '<p id="percentage"></p>'
                     + '</div>');
 
             if (params.logoPath !== "") {
-                $('.myAwsomeLoader').prepend('<div class = "loader-img"><img src=' + params.logoPath + ' alt="Logo" id="logo"/></div>');
+                $('.myAwesomeLoader').prepend('<div class = "loader-img"><img src=' + params.logoPath + ' alt="Logo" id="logo"/></div>');
             }
 
             function percentage() {
@@ -96,7 +96,7 @@
             switch (params.type) {
                 case "dots":
                     $(function () {
-                        $('.myAwsomeLoader').append('<div class = "loading"></div>');
+                        $('.myAwesomeLoader').append('<div class = "loading"></div>');
                         for (var dot = 1; dot <= params.numberOfDots; ++dot) {
                             $('.loading').each(function () {
                                 $(this).append('<span class="dot blank" data-dot=' + dot + '> </span>');
@@ -220,7 +220,7 @@
 
     $(window).load(function () {
         setTimeout(function () {
-            $(".myAwsomeLoader").fadeOut("500", function () {
+            $(".myAwesomeLoader").fadeOut("500", function () {
                 $(this).remove();
             });
         }, duration);
