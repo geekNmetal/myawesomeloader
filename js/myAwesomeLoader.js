@@ -25,7 +25,7 @@
                     barHeight: "5px",
                     border: true,
                     loaderColor: "0075b2",
-                    logoPath: "../logo.svg",
+                    logoPath: "../logo.png",
                     logoEffect: "",
                     percentage: true
                 };
